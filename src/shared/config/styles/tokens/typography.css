@@ -1,0 +1,22 @@
+:root {
+  --font-family: "Onest", sans-serif;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 36px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-dense: 1.30556; /* очень плотный */
+  --line-height-compact: 1.33333; /* плотный */
+  --line-height-snug: 1.375; /* умеренно плотный */
+  --line-height-normal: 1.42857; /* стандартный (≈1.43) */
+  --line-height-relaxed: 1.44444; /* слегка свободный */
+  --line-height-loose: 1.5; /* свободный */
+}

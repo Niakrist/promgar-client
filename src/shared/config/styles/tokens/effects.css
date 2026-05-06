@@ -1,0 +1,12 @@
+:root {
+  --radius-sm: 4px;
+  --radius-md: 5px;
+  --radius-lg: 10px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 5px 20px 0 rgba(12, 19, 26, 0.05);
+  --shadow-md: 0 10px 30px 0 rgba(14, 25, 35, 0.1);
+  --shadow-lg: 0 10px 40px 0 rgba(41, 55, 68, 0.1);
+
+  --transition-fast: 0.3s ease;
+}

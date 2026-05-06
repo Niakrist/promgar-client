@@ -1,0 +1,27 @@
+export const colorTokens = {
+  white: "#fff",
+  red: "#ea2046",
+  orange: "#ef6c00",
+  green: "#0ea348",
+  blue: "#326fee",
+  yellow: "#ffb70e",
+  primary: "#1e3585",
+  darkBlue: "#4c5570",
+  darkBlue2: "#364061",
+  mainNormal: "#0277bd",
+  mainHover: "#0c92e2",
+  mainActive: "#04629a",
+  grayscaleBlack: "#111",
+  grayscaleGray1: "#313335",
+  grayscaleGray2: "#505153",
+  grayscaleGray3: "#7c7e84",
+  grayscaleGray4: "#919395",
+  grayscaleGray5: "#a8abae",
+  grayscaleGray6: "#d3d3d6",
+  grayscaleGray7: "#e3e3e3",
+  grayscaleGray8: "#eeeff0",
+  grayscaleGray9: "#f6f6f6",
+  grayscaleGray10: "#f1f5f9",
+} as const;
+
+export type ColorToken = keyof typeof colorTokens;

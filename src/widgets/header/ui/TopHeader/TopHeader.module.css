@@ -1,0 +1,40 @@
+.wrapper {
+  padding: 8px 0px;
+  background-color: var(--grayscale-gray-10);
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--main-normal);
+
+  transition: color var(--transition-fast);
+}
+
+.item:hover {
+  color: var(--orange);
+}
+
+.link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--grayscale-gray-2);
+
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--orange);
+}
