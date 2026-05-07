@@ -3,4 +3,5 @@ export interface ICategory {
   name: string;
   images: string;
   productsCount: number;
+  url: string;
 }

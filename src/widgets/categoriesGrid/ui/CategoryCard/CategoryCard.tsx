@@ -9,7 +9,7 @@ interface ICategoryCardProps {
 
 export const CategoryCard = ({ category }: ICategoryCardProps) => {
   return (
-    <Link href={category.id} className={styles.item}>
+    <Link href={category.url} className={styles.item}>
       <p className={styles.name}>{category.name}</p>
       <p className={styles.count}>{category.productsCount} товаров</p>
       <img className={styles.img} src={category.images} alt="" />
