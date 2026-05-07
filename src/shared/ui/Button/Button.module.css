@@ -8,11 +8,16 @@
   font-family: inherit;
   gap: 10px;
   white-space: nowrap;
+  transition:
+    background-color var(--transition-fast),
+    border var(--transition-fast);
 }
 
 .button:disabled {
   opacity: 0.5;
 }
+
+/* padding */
 .xs {
   padding: var(--button-padding-xs);
 }
@@ -41,46 +46,98 @@
   width: 100%;
 }
 
+/* variant  */
+
 .primary {
   background-color: var(--main-normal);
   color: var(--white);
-  transition: background-color var(--transition-fast);
 }
 
 .primary:hover {
   background-color: var(--main-hover);
 }
 
-.primary:focus {
-  outline: 3px solid rgba(112, 164, 255, 0.5);
-}
-
-.primary.active {
-  background-color: var(--main-active);
-}
-
-.grayscale {
-  background-color: var(--grayscale-gray-7);
-}
-
-.ghost {
-  border: 1px solid var(--grayscale-gray-7);
-  background-color: var(--white);
-}
-
-.blueBg {
-  font-weight: 500;
+.blue {
   background-color: rgba(2, 119, 189, 0.1);
 }
 
+.blue:hover {
+  background-color: rgba(12, 146, 226, 0.2);
+}
+
+.grayscale {
+  background-color: var(--grayscale-gray-10);
+}
+
+.grayscale:hover {
+  background-color: #e2e8f0;
+}
+
+.orange {
+  background-color: rgba(239, 108, 0, 0.1);
+}
+
+.orange:hover {
+  background-color: rgba(245, 124, 0, 0.2);
+}
+
 .white {
+  background-color: var(--white);
+  border: 1px solid var(--grayscale-gray-7);
+}
+
+.white:hover {
+  border: 1px solid var(--grayscale-gray-5);
+}
+
+.border {
+  background-color: var(--white);
+  border: 1px solid var(--main-normal);
+}
+
+.border:hover {
+  border: 1px solid var(--main-hover);
+}
+
+/* Text Color */
+.whiteText {
   color: var(--white);
 }
 
-.blue {
+.blueText {
   color: var(--main-normal);
 }
 
-.black {
+.blackText {
   color: var(--grayscale-black);
+}
+
+.orangeText {
+  color: var(--orange);
+}
+
+/* font weight */
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+/* Font Size */
+
+.smallFs {
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.normalFs {
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.bigFs {
+  font-size: 18px;
+  line-height: 1.44444;
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./MainHeader.module.css";
 import { Button, Container, Icon, Input, Logo } from "@/shared/ui";
 import { CartButton } from "@/entities/ui/CartButton/CartButton";
@@ -10,7 +9,8 @@ export const MainHeader = () => {
         <Logo />
         <Button
           padding="sm"
-          color="white"
+          textColor="white"
+          fw="medium"
           prefixIcon={<Icon name="iconCatalog" />}
         >
           Каталог
@@ -20,7 +20,13 @@ export const MainHeader = () => {
           placeholder="Введите наименование или артикул"
           sufixIcon={<Icon name="iconSearch" />}
         />
-        <Button color="blue" padding="xs" variant="blue">
+        <Button
+          textColor="blue"
+          fw="medium"
+          fs="small"
+          padding="xs"
+          variant="blue"
+        >
           Заказать звонок
         </Button>
         <CartButton />
