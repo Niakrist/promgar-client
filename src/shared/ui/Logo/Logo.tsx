@@ -1,16 +1,28 @@
-import React from "react";
 import { Icon } from "../Icon/Icon";
 import styles from "./Logo.module.css";
-import Link from "next/link";
+import cn from "classnames";
 
-export const Logo = () => {
+interface ILogo {
+  color?: "white" | "blue";
+}
+export const Logo = ({ color }: ILogo) => {
   return (
-    <Link href="/" className={styles.logo}>
-      <Icon name="iconLogo" />
+    <div className={styles.logo}>
+      <Icon
+        name="iconLogo"
+        className={cn({
+          [styles.blue]: color === "blue",
+          [styles.white]: color === "white",
+        })}
+      />
       <div>
-        <p className={styles.top}>Промышленная</p>
-        <p className={styles.bottom}>гарантия</p>
+        <p className={cn(styles.top, { [styles.white]: color === "white" })}>
+          Промышленная
+        </p>
+        <p className={cn(styles.bottom, { [styles.white]: color === "white" })}>
+          гарантия
+        </p>
       </div>
-    </Link>
+    </div>
   );
 };
