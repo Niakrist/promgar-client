@@ -17,3 +17,11 @@
   line-height: 1.375;
   color: var(--orange);
 }
+
+.white {
+  color: var(--white);
+}
+
+.blue {
+  color: var(--main-normal);
+}
