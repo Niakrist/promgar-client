@@ -1,6 +1,6 @@
+import { CartButton } from "@/entities";
 import styles from "./MainHeader.module.css";
 import { Button, Container, Icon, Input, Logo } from "@/shared/ui";
-import { CartButton } from "@/entities/ui/CartButton/CartButton";
 
 export const MainHeader = () => {
   return (

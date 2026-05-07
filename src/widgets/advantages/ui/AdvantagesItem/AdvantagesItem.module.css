@@ -1,0 +1,14 @@
+.icon {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--grayscale-gray-2);
+}

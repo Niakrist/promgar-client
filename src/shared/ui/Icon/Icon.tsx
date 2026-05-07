@@ -7,6 +7,15 @@ import { IconSearch } from "./Icons/IconSearch";
 import { IconCart } from "./Icons/IconCart";
 import { IconDiscont } from "./Icons/IconDiscont";
 import { IconChevronLeft } from "./Icons/IconChevronLeft";
+import { IconArrow } from "./Icons/IconArrow";
+import { IconWarehouse } from "./Icons/IconWarehouse";
+import { IconCertificates } from "./Icons/IconCertificates";
+import { IconAnalogues } from "./Icons/IconAnalogues";
+import { IconDeferred } from "./Icons/IconDeferred";
+import { IconDelivery } from "./Icons/IconDelivery";
+import { IconReservation } from "./Icons/IconReservation";
+import { IconControl } from "./Icons/IconControl";
+import { IconExport } from "./Icons/IconExport";
 
 export type TIcons =
   | "iconEmail"
@@ -16,11 +25,19 @@ export type TIcons =
   | "iconSearch"
   | "iconCart"
   | "iconDiscont"
-  | "iconChevronLeft";
+  | "iconChevronLeft"
+  | "iconArrow"
+  | "iconWarehouse"
+  | "iconCertificates"
+  | "iconAnalogues"
+  | "iconDeferred"
+  | "iconDelivery"
+  | "iconReservation"
+  | "iconControl"
+  | "iconExport";
 
 interface IIconsProps extends React.ComponentProps<"svg"> {
   name: TIcons;
-
   className?: string;
 }
 
@@ -34,6 +51,15 @@ export const Icon = ({ name, className, ...props }: IIconsProps) => {
     iconCart: <IconCart className={className} {...props} />,
     iconDiscont: <IconDiscont className={className} {...props} />,
     iconChevronLeft: <IconChevronLeft className={className} {...props} />,
+    iconArrow: <IconArrow className={className} {...props} />,
+    iconWarehouse: <IconWarehouse className={className} {...props} />,
+    iconCertificates: <IconCertificates className={className} {...props} />,
+    iconAnalogues: <IconAnalogues className={className} {...props} />,
+    iconDeferred: <IconDeferred className={className} {...props} />,
+    iconDelivery: <IconDelivery className={className} {...props} />,
+    iconReservation: <IconReservation className={className} {...props} />,
+    iconControl: <IconControl className={className} {...props} />,
+    iconExport: <IconExport className={className} {...props} />,
   };
   return icons[name];
 };
