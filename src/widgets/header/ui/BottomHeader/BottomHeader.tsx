@@ -1,17 +1,24 @@
 import { bearingHeaderLinks } from "@/shared/config";
-import { Container, Icon } from "@/shared/ui";
-import Link from "next/link";
+import { Button, Container, Icon } from "@/shared/ui";
+
 import styles from "./BottomHeader.module.css";
 
 export const BottomHeader = () => {
   return (
     <Container>
       <ul className={styles.list}>
-        {bearingHeaderLinks.map((item) => (
-          <Link className={styles.link} key={item.href} href={item.href}>
+        {bearingHeaderLinks.map((item, index) => (
+          <Button
+            padding="md"
+            textColor={index === 0 ? "orange" : "black"}
+            variant={index === 0 ? "orange" : "grayscale"}
+            fs="small"
+            key={item.href}
+            href={item.href}
+          >
             {!!item.name && <Icon name={item.name} />}
             {item.label}
-          </Link>
+          </Button>
         ))}
       </ul>
     </Container>

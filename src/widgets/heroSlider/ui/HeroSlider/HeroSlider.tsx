@@ -15,6 +15,9 @@ export const HeroSlider = () => {
               className={styles.button}
               padding="md"
               color="white"
+              textColor="white"
+              fs="big"
+              fw="medium"
               sufixIcon={<Icon name="iconChevronLeft" />}
             >
               {slide.action}
