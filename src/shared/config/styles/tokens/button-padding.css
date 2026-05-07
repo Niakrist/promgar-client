@@ -1,0 +1,8 @@
+:root {
+  --button-padding-xs: 10px 15px;
+  --button-padding-sm: 10px 20px;
+  --button-padding-md: 12px 20px;
+  --button-padding-lg: 12px 25px;
+  --button-padding-xl: 12px 30px;
+  --button-padding-xxl: 13px 35px;
+}

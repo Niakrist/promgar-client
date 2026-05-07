@@ -1,0 +1,86 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+.xs {
+  padding: var(--button-padding-xs);
+}
+
+.sm {
+  padding: var(--button-padding-sm);
+}
+
+.md {
+  padding: var(--button-padding-md);
+}
+
+.lg {
+  padding: var(--button-padding-lg);
+}
+
+.xl {
+  padding: var(--button-padding-xl);
+}
+
+.xxl {
+  padding: var(--button-padding-xxl);
+}
+
+.full {
+  width: 100%;
+}
+
+.primary {
+  background-color: var(--main-normal);
+  color: var(--white);
+  transition: background-color var(--transition-fast);
+}
+
+.primary:hover {
+  background-color: var(--main-hover);
+}
+
+.primary:focus {
+  outline: 3px solid rgba(112, 164, 255, 0.5);
+}
+
+.primary.active {
+  background-color: var(--main-active);
+}
+
+.grayscale {
+  background-color: var(--grayscale-gray-7);
+}
+
+.ghost {
+  border: 1px solid var(--grayscale-gray-7);
+  background-color: var(--white);
+}
+
+.blueBg {
+  font-weight: 500;
+  background-color: rgba(2, 119, 189, 0.1);
+}
+
+.white {
+  color: var(--white);
+}
+
+.blue {
+  color: var(--main-normal);
+}
+
+.black {
+  color: var(--grayscale-black);
+}
