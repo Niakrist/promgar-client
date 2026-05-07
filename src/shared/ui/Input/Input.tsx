@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./Input.module.css";
+import cn from "classnames";
+
+export type InputPadding = "s" | "m";
 
 interface IInputProps extends React.ComponentProps<"input"> {
   type: "text" | "email";
   placeholder: string;
+  padding: InputPadding;
   className?: string;
   prefixIcon?: React.ReactNode;
   sufixIcon?: React.ReactNode;
@@ -15,9 +19,19 @@ export const Input = ({
   className,
   prefixIcon,
   sufixIcon,
+  padding,
 }: IInputProps) => {
   return (
-    <label className={styles.wrapper}>
+    <label
+      className={cn(
+        styles.wrapper,
+        {
+          [styles.s]: padding === "s",
+          [styles.m]: padding === "m",
+        },
+        className,
+      )}
+    >
       {prefixIcon}
       <input className={styles.input} type={type} placeholder={placeholder} />
       {sufixIcon}

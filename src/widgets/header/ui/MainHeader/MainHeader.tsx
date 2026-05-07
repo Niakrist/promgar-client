@@ -17,6 +17,7 @@ export const MainHeader = () => {
         </Button>
         <Input
           type="text"
+          padding="s"
           placeholder="Введите наименование или артикул"
           sufixIcon={<Icon name="iconSearch" />}
         />

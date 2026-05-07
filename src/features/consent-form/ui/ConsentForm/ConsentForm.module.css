@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto; /* input — резиновая, button — по содержимому */
+  row-gap: 10px;
+  column-gap: 16px;
+  align-items: center; /* выравнивание по вертикали */
+  max-width: 600px; /* опционально, для ограничения ширины */
+  margin: 0 auto; /* центровка */
+}
+
+.input {
+  width: 300px; /* растягивается внутри своей ячейки */
+}
+
+.button {
+  white-space: nowrap; /* чтобы текст кнопки не переносился */
+}
+
+.checkbox {
+  grid-column: 1 / -1; /* занимает с первой до последней колонки */
+}
+
+/* Адаптивность: на узких экранах переключаем в столбик */
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* одна колонка */
+    gap: 12px;
+  }
+
+  .checkbox {
+    grid-column: auto; /* сбрасываем span, т.к. теперь одна колонка */
+  }
+}
