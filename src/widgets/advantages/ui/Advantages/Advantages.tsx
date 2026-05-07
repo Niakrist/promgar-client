@@ -5,7 +5,7 @@ import { AdvantagesItem } from "../AdvantagesItem/AdvantagesItem";
 
 export const Advantages = () => {
   return (
-    <section>
+    <section className={styles.section}>
       <Container>
         <Htag color="black" size="normal" tag="h2" className={styles.title}>
           Преимущества компании

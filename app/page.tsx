@@ -1,4 +1,4 @@
-import { Advantages, CategoriesGrid, HeroSlider } from "@/widgets";
+import { Advantages, CategoriesGrid, HeroSlider, Subscribe } from "@/widgets";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <HeroSlider />
       <CategoriesGrid />
       <Advantages />
+      <Subscribe />
     </>
   );
 }
