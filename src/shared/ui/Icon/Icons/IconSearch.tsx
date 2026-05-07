@@ -1,4 +1,3 @@
-import React from "react";
 import { IIconProps } from "./Icon.props";
 
 export const IconSearch = ({ className, ...props }: IIconProps) => {

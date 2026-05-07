@@ -1,0 +1,21 @@
+.title {
+  font-weight: 500;
+  line-height: 1.33333;
+}
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--grayscale-black);
+}
+.small {
+  font-size: 18px;
+}
+
+.normal {
+  font-size: 30px;
+}
+
+.big {
+  font-size: 36px;
+}
