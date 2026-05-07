@@ -1,0 +1,28 @@
+.container {
+  padding-top: 20px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--grayscale-gray-9);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--grayscale-gray-9);
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--orange);
+}
