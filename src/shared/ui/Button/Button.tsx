@@ -1,61 +1,97 @@
 import React from "react";
 import styles from "./Button.module.css";
 import cn from "classnames";
+import Link from "next/link";
 
 export type ButtonPadding = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
-export type ButtonVariant = "primary" | "grayscale" | "ghost" | "blue";
-export type ButtonColor = "white" | "blue" | "black";
+export type ButtonVariant =
+  | "primary"
+  | "blue"
+  | "grayscale"
+  | "orange"
+  | "white"
+  | "border";
+export type ButtonTextColor = "white" | "blue" | "black" | "orange";
+export type ButtonFontWeight = "normal" | "medium" | "black" | "orange";
+export type ButtonFontSize = "small" | "normal" | "big";
 
 interface IButton extends React.ComponentProps<"button"> {
   children: React.ReactNode;
   padding: ButtonPadding;
-  color: ButtonColor;
+  textColor: ButtonTextColor;
   variant?: ButtonVariant;
+  fw?: ButtonFontWeight;
+  fs?: ButtonFontSize;
   className?: string;
   disabled?: boolean;
   full?: boolean;
   prefixIcon?: React.ReactNode;
   sufixIcon?: React.ReactNode;
+  href?: string;
 }
 
 export const Button = ({
   children,
   padding,
-  color,
+  textColor,
   disabled = false,
   full = false,
   variant = "primary",
+  fw = "normal",
+  fs = "normal",
   className,
   prefixIcon,
   sufixIcon,
+  href,
 }: IButton) => {
-  return (
-    <button
-      className={cn(
-        styles.button,
-        {
-          [styles.xs]: padding === "xs",
-          [styles.sm]: padding === "sm",
-          [styles.md]: padding === "md",
-          [styles.lg]: padding === "lg",
-          [styles.xl]: padding === "xl",
-          [styles.xxl]: padding === "xxl",
-          [styles.full]: full,
-          [styles.primary]: variant === "primary",
-          [styles.blueBg]: variant === "blue",
-          [styles.grayscale]: variant === "grayscale",
-          [styles.ghost]: variant === "ghost",
-          [styles.white]: color === "white",
-          [styles.blue]: color === "blue",
-          [styles.black]: color === "black",
-        },
-        className,
-      )}
-      disabled={disabled}
-    >
+  const classNames = cn(
+    styles.button,
+    {
+      [styles.xs]: padding === "xs",
+      [styles.sm]: padding === "sm",
+      [styles.md]: padding === "md",
+      [styles.lg]: padding === "lg",
+      [styles.xl]: padding === "xl",
+      [styles.xxl]: padding === "xxl",
+      [styles.full]: full,
+      [styles.primary]: variant === "primary",
+      [styles.blue]: variant === "blue",
+      [styles.grayscale]: variant === "grayscale",
+      [styles.orange]: variant === "orange",
+      [styles.white]: variant === "white",
+      [styles.border]: variant === "border",
+      [styles.whiteText]: textColor === "white",
+      [styles.blueText]: textColor === "blue",
+      [styles.blackText]: textColor === "black",
+      [styles.orangeText]: textColor === "orange",
+      [styles.normal]: fw === "normal",
+      [styles.medium]: fw === "medium",
+      [styles.smallFs]: fs === "small",
+      [styles.normalFs]: fs === "normal",
+      [styles.bigFs]: fs === "big",
+    },
+    className,
+  );
+
+  const content = (
+    <>
       {prefixIcon}
       {children}
       {sufixIcon}
-    </button>
+    </>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className={classNames}>
+        {content}
+      </Link>
+    );
+  } else {
+    return (
+      <button className={classNames} disabled={disabled}>
+        {content}
+      </button>
+    );
+  }
 };
