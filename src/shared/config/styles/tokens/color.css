@@ -1,0 +1,25 @@
+:root {
+  --white: #fff;
+  --red: #ea2046;
+  --orange: #ef6c00;
+  --green: #0ea348;
+  --blue: #326fee;
+  --yellow: #ffb70e;
+  --primary: #1e3585;
+  --dark-blue: #4c5570;
+  --dark-blue-2: #364061;
+  --main-normal: #0277bd;
+  --main-hover: #0c92e2;
+  --main-active: #04629a;
+  --grayscale-black: #111;
+  --grayscale-gray-1: #313335;
+  --grayscale-gray-2: #505153;
+  --grayscale-gray-3: #7c7e84;
+  --grayscale-gray-4: #919395;
+  --grayscale-gray-5: #a8abae;
+  --grayscale-gray-6: #d3d3d6;
+  --grayscale-gray-7: #e3e3e3;
+  --grayscale-gray-8: #eeeff0;
+  --grayscale-gray-9: #f6f6f6;
+  --grayscale-gray-10: #f1f5f9;
+}

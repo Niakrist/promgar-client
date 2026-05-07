@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--grayscale-gray-6);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: border var(--transition-fast);
+}
+
+.wrapper:hover {
+  border: 1px solid var(--main-hover);
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: var(--grayscale-gray-3);
+}
