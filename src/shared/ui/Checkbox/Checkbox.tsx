@@ -6,32 +6,33 @@ import { ComponentProps } from "react";
 
 interface ICheckboxProps extends ComponentProps<"div"> {
   text: string;
-  id: string;
-  isActive: boolean;
-  handleChange: () => void;
+  id?: string;
+  checked: boolean;
+  onChange: () => void;
   className?: string;
 }
 
 export const Checkbox = ({
   text,
-  isActive,
-  handleChange,
+  id,
+  checked,
+  onChange,
   className,
 }: ICheckboxProps) => {
   return (
     <div className={className}>
       <input
-        checked={isActive}
-        onChange={handleChange}
-        id={"test"}
+        checked={checked}
+        onChange={onChange}
+        id={id}
         type="checkbox"
         className={styles.input}
       />
-      <label className={styles.label} htmlFor="test">
+      <label className={styles.label} htmlFor={id || "checkbox"}>
         <span
-          className={cn(styles.checkbox, { [styles.checkboxActive]: isActive })}
+          className={cn(styles.checkbox, { [styles.checkboxActive]: checked })}
         >
-          {!!isActive && <Icon name="iconCheck" />}
+          {checked && <Icon name="iconCheck" />}
         </span>
         {text}
       </label>

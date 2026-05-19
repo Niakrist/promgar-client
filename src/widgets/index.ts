@@ -5,3 +5,4 @@ export { Advantages } from "./advantages";
 export { Subscribe } from "./subscribe";
 export { Footer } from "./footer";
 export { BrandsList } from "./brands";
+export { Sidebar } from "./sidebar";
