@@ -19,6 +19,7 @@ import { IconExport } from "./Icons/IconExport";
 import { IconTelegram } from "./Icons/IconTelegram";
 import { IconCheck } from "./Icons/IconCheck";
 import { IconGeo } from "./Icons/IconGeo";
+import { IconChevron } from "./Icons/IconChevron";
 
 export type TIcons =
   | "iconEmail"
@@ -40,7 +41,8 @@ export type TIcons =
   | "iconExport"
   | "iconTelegram"
   | "iconCheck"
-  | "iconGeo";
+  | "iconGeo"
+  | "iconChevron";
 
 interface IIconsProps extends React.ComponentProps<"svg"> {
   name: TIcons;
@@ -69,6 +71,7 @@ export const Icon = ({ name, className, ...props }: IIconsProps) => {
     iconTelegram: <IconTelegram className={className} {...props} />,
     iconCheck: <IconCheck className={className} {...props} />,
     iconGeo: <IconGeo className={className} {...props} />,
+    iconChevron: <IconChevron className={className} {...props} />,
   };
   return icons[name];
 };
