@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { ComponentProps, useState } from "react";
 import { Icon } from "../Icon/Icon";
 import styles from "./Dropdown.module.css";
 import cn from "classnames";
 
-interface IDropdownProps {
+interface IDropdownProps extends ComponentProps<"div"> {
   name: string;
   children: React.ReactNode;
 }

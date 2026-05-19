@@ -1,6 +1,5 @@
 .wrapper {
   width: 100%;
-
   border: 1px solid var(--grayscale-gray-6);
   border-radius: 5px;
   display: flex;
@@ -14,10 +13,13 @@
 }
 
 .input {
-  background-color: transparent;
   width: 100%;
   border: none;
   outline: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
 }
 
 input::placeholder {
@@ -25,6 +27,14 @@ input::placeholder {
   font-size: 14px;
   line-height: 1.42857;
   color: var(--grayscale-gray-3);
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.white {
+  background-color: var(--white);
 }
 
 .s {
