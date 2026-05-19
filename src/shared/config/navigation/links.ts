@@ -14,15 +14,15 @@ export const topHeaderLinks: NavLink[] = [
 ];
 
 export const bearingHeaderLinks: NavLink[] = [
-  { href: "/1", label: "Акции", name: "iconDiscont" },
-  { href: "/2", label: "Шариковые" },
-  { href: "/3", label: "Роликовые" },
-  { href: "/4", label: "Игольчатые" },
-  { href: "/5", label: "Сферические" },
-  { href: "/6", label: "Конические" },
-  { href: "/7", label: "Однорядные" },
-  { href: "/8", label: "Двухрядные" },
-  { href: "/9", label: "Шаринирные" },
-  { href: "/10", label: "Линейного перемещения" },
-  { href: "/11", label: "Автомобильные" },
+  { href: "/products/1", label: "Акции", name: "iconDiscont" },
+  { href: "/products/2", label: "Шариковые" },
+  { href: "/products/3", label: "Роликовые" },
+  { href: "/products/4", label: "Игольчатые" },
+  { href: "/products/5", label: "Сферические" },
+  { href: "/products/6", label: "Конические" },
+  { href: "/products/7", label: "Однорядные" },
+  { href: "/products/8", label: "Двухрядные" },
+  { href: "/products/9", label: "Шаринирные" },
+  { href: "/products/10", label: "Линейного перемещения" },
+  { href: "/products/11", label: "Автомобильные" },
 ];
