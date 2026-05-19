@@ -9,7 +9,7 @@ interface IBrandCardProps {
 
 export const BrandCard = ({ brand }: IBrandCardProps) => {
   return (
-    <Link href={brand.id} className={styles.item}>
+    <Link href={brand.url} className={styles.item}>
       <p className={styles.name}>{brand.name}</p>
       <p className={styles.count}>{brand.productsCount} товаров</p>
       <div className={styles.imgWrapper}>

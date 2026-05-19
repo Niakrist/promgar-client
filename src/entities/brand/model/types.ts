@@ -3,4 +3,5 @@ export interface IBrand {
   name: string;
   images: string;
   productsCount: number;
+  url: string;
 }
