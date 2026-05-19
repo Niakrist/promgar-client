@@ -23,7 +23,7 @@ export const FilterCheckBox = ({ items, name }: IFilterCheckBoxProps) => {
 
   return (
     <Dropdown name={name}>
-      <ul>
+      <ul className={styles.list}>
         {items.map((item) => (
           <li key={item.id} className={styles.item}>
             <CheckBoxFilter

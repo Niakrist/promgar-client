@@ -1,6 +1,6 @@
 import styles from "./Sidebar.module.css";
 import { Htag } from "@/shared/ui";
-import { FilterCheckBox } from "@/features";
+import { FilterCheckBox, FilterInputs } from "@/features";
 
 const rowCountIdList = [
   { id: "rowCountIdList1", name: "Однорядные" },
@@ -27,12 +27,10 @@ export const Sidebar = () => {
       <Htag color="black" size="small" tag="h2">
         Фильтры
       </Htag>
-      <div className={styles.wrapper}>
-        <FilterCheckBox name="Количество рядов" items={rowCountIdList} />
-      </div>
-      <div className={styles.wrapper}>
-        <FilterCheckBox name="Тип подшипника" items={bearingDdesignList} />
-      </div>
+
+      <FilterInputs name="Диаметр внутренний (d), мм" />
+      <FilterCheckBox name="Количество рядов" items={rowCountIdList} />
+      <FilterCheckBox name="Тип подшипника" items={bearingDdesignList} />
     </aside>
   );
 };

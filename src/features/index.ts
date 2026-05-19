@@ -1,2 +1,2 @@
 export { ConsentForm } from "./consent-form";
-export { FilterCheckBox } from "./filter";
+export { FilterCheckBox, FilterInputs } from "./filter";

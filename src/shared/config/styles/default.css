@@ -48,3 +48,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
+input {
+  font-family: inherit;
+}
+
+input::placeholder {
+  font-family: inherit;
+}
