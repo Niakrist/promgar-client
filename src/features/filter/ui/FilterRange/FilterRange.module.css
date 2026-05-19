@@ -1,0 +1,87 @@
+.container {
+  margin-top: 15px;
+}
+.text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--grayscale-black);
+}
+
+.wrapper {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 9px 15px;
+  border: 1px solid var(--grayscale-gray-6);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: border var(--transition-fast);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.input:hover {
+  border: 1px solid var(--main-hover);
+}
+
+.input:focus,
+.input:active {
+  border: 1px solid var(--main-active);
+  outline: 1px solid var(--main-active);
+}
+
+.sliderWrapper {
+  padding: 5px 10px 10px;
+}
+
+/* Стилизация rc-slider */
+.slider :global(.rc-slider-track) {
+  background-color: var(--main-normal);
+}
+
+.slider :global(.rc-slider-rail) {
+  background-color: var(--grayscale-gray-6);
+}
+
+.slider :global(.rc-slider-handle) {
+  border-color: var(--main-normal);
+  background-color: var(--main-normal); /* Закрашиваем */
+  border-width: 0; /* Убираем обводку */
+  width: 15px;
+  height: 15px;
+  margin-top: -6px; /* Корректируем позицию */
+}
+
+.slider :global(.rc-slider-handle:hover) {
+  background-color: var(--main-hover);
+}
+
+.slider :global(.rc-slider-handle:active),
+.slider :global(.rc-slider-handle-dragging) {
+  background-color: var(--main-active);
+  transform: scale(1.2);
+}
+
+.slider :global(.rc-slider-handle-dragging) {
+  border-color: var(--main-active);
+  box-shadow: 0 0 0 5px rgba(2, 119, 189, 0.2);
+}
+
+.slider :global(.rc-slider-dot) {
+  border-color: var(--grayscale-gray-6);
+}
+
+.slider :global(.rc-slider-dot-active) {
+  border-color: var(--main-normal);
+}

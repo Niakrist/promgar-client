@@ -1,5 +1,4 @@
 import { Dropdown, Input } from "@/shared/ui";
-import React from "react";
 import styles from "./FilterInputs.module.css";
 
 interface IFilterInputsProps {

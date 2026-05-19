@@ -1,6 +1,6 @@
 import styles from "./Sidebar.module.css";
-import { Htag } from "@/shared/ui";
-import { FilterCheckBox, FilterInputs } from "@/features";
+import { Button, Htag, Icon } from "@/shared/ui";
+import { FilterCheckBox, FilterInputs, FilterRange } from "@/features";
 
 const rowCountIdList = [
   { id: "rowCountIdList1", name: "Однорядные" },
@@ -27,10 +27,36 @@ export const Sidebar = () => {
       <Htag color="black" size="small" tag="h2">
         Фильтры
       </Htag>
-
-      <FilterInputs name="Диаметр внутренний (d), мм" />
+      <FilterRange name="Цена, ₽" />
+      <FilterRange name="Диаметр внутренний (d), мм" />
+      <FilterRange name="Диаметр внешний (D), мм" />
+      <FilterRange name="Ширина (В), мм" />
+      <FilterCheckBox name="Производитель" items={bearingDdesignList} />
+      <FilterCheckBox name="Тело качения" items={bearingDdesignList} />
       <FilterCheckBox name="Количество рядов" items={rowCountIdList} />
       <FilterCheckBox name="Тип подшипника" items={bearingDdesignList} />
+      <Button
+        className={styles.button}
+        padding="md"
+        textColor="white"
+        variant="primary"
+        fw="medium"
+        full
+      >
+        Показать
+      </Button>
+
+      <Button
+        className={styles.button}
+        padding="md"
+        textColor="black"
+        variant="white"
+        fw="medium"
+        full
+        prefixIcon={<Icon name="iconReset" />}
+      >
+        Сбросить
+      </Button>
     </aside>
   );
 };
