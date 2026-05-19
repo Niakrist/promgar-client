@@ -11,6 +11,7 @@ interface IInputProps extends React.ComponentProps<"input"> {
   className?: string;
   prefixIcon?: React.ReactNode;
   sufixIcon?: React.ReactNode;
+  bgColor?: "transparent" | "white";
 }
 
 export const Input = ({
@@ -20,12 +21,15 @@ export const Input = ({
   prefixIcon,
   sufixIcon,
   padding,
+  bgColor = "transparent",
 }: IInputProps) => {
   return (
     <label
       className={cn(
         styles.wrapper,
         {
+          [styles.transparent]: bgColor === "transparent",
+          [styles.white]: bgColor === "white",
           [styles.s]: padding === "s",
           [styles.m]: padding === "m",
         },
