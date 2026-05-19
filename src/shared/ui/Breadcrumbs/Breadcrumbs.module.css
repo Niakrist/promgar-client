@@ -33,5 +33,4 @@
 .separator {
   margin: 0 4px;
   color: var(--grayscale-gray-4);
-  transition: color var(--transition-fast);
 }
