@@ -4,7 +4,7 @@ import styles from "./Pagination.module.css";
 import { useState } from "react";
 import cn from "classnames";
 
-const PAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const PAGES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 export const Pagination = () => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
