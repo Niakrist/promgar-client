@@ -7,4 +7,5 @@ export interface IProduct {
   h: string;
   brand: string;
   img: string;
+  images: string[];
 }

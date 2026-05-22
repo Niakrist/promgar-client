@@ -4,12 +4,17 @@ import { Sidebar } from "@/widgets";
 import { ProductList } from "@/widgets/productList/ui/ProductList/ProductList";
 import { Pagination } from "@/features";
 
-export default function ProductsPage() {
+export default async function CategoryPage({
+  params,
+}: {
+  params: { category: string };
+}) {
+  const { category } = await params;
   return (
     <section className={styles.section}>
       <Container>
         <Htag color="black" size="big" tag="h1" className={styles.title}>
-          Радиальные шариковые подшипники
+          Радиальные шариковые {category}
         </Htag>
         <div className={styles.wrapper}>
           <Sidebar />
