@@ -10,6 +10,7 @@ export const productList: IProduct[] = [
     h: "65",
     brand: "FAG",
     img: "double-row.jpg",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "6-2007117 A",
@@ -20,6 +21,7 @@ export const productList: IProduct[] = [
     h: "70/50",
     brand: "SKF",
     img: "roller-bearings.jpg",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "32130Д",
@@ -30,6 +32,7 @@ export const productList: IProduct[] = [
     h: "70/500",
     brand: "Timken",
     img: "persistent.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "23030 CC/W33 FBC",
@@ -40,6 +43,7 @@ export const productList: IProduct[] = [
     h: "900/700",
     brand: "NSK",
     img: "single-row.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "UCF 207",
@@ -50,6 +54,7 @@ export const productList: IProduct[] = [
     h: "35,765",
     brand: "Koya",
     img: "spherical.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "205",
@@ -60,6 +65,7 @@ export const productList: IProduct[] = [
     h: "50",
     brand: "NTN / NSR",
     img: "housing-units.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "36-232726Е2М",
@@ -70,6 +76,7 @@ export const productList: IProduct[] = [
     h: "75",
     brand: "Craft",
     img: "needle-shaped.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "6307",
@@ -80,6 +87,7 @@ export const productList: IProduct[] = [
     h: "5",
     brand: "ГПЗ 10",
     img: "conical.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "3530 Л ",
@@ -90,6 +98,7 @@ export const productList: IProduct[] = [
     h: "10",
     brand: "Nachi",
     img: "articulated.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
   {
     id: "180316",
@@ -100,5 +109,6 @@ export const productList: IProduct[] = [
     h: "100",
     brand: "INA",
     img: "ball-bearings.png",
+    images: ["double-row.jpg", "roller-bearings.jpg", "persistent.png"],
   },
 ];
