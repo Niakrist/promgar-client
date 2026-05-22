@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  max-width: 145px;
+  border: 1px solid var(--grayscale-gray-6);
+  border-radius: 5px;
+}
+
+.button {
+  margin: 0;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 0;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--grayscale-gray-2);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--grayscale-gray-9);
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--grayscale-black);
+}

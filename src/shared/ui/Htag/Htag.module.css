@@ -8,6 +8,11 @@
 .black {
   color: var(--grayscale-black);
 }
+
+.verySmall {
+  font-size: 14px;
+}
+
 .small {
   font-size: 18px;
 }

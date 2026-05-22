@@ -1,4 +1,5 @@
 :root {
+  --button-padding-xxs: 10px;
   --button-padding-xs: 10px 15px;
   --button-padding-sm: 10px 20px;
   --button-padding-md: 12px 20px;

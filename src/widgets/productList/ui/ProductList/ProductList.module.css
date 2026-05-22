@@ -1,0 +1,12 @@
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item {
+  box-shadow: 0 3px 7px rgba(14, 25, 35, 0);
+  transition: box-shadow 0.3s;
+}
+
+.item:hover {
+  box-shadow: 0 3px 7px rgba(14, 25, 35, 0.1);
+}
