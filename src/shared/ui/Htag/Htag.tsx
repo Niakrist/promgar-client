@@ -4,7 +4,7 @@ import styles from "./Htag.module.css";
 
 type HTitle = "h1" | "h2" | "h3";
 type TitleTextColor = "white" | "black";
-type TitleFontSize = "small" | "normal" | "big";
+type TitleFontSize = "verySmall" | "small" | "normal" | "big";
 
 interface IHtagProps extends React.ComponentProps<"h1" | "h2" | "h3"> {
   tag: HTitle;
@@ -28,6 +28,7 @@ export const Htag = ({
       [styles.white]: color === "white",
       [styles.black]: color === "black",
       [styles.small]: size === "small",
+      [styles.verySmall]: size === "verySmall",
       [styles.normal]: size === "normal",
       [styles.big]: size === "big",
     },

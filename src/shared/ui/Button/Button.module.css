@@ -1,4 +1,5 @@
 .button {
+  padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -18,6 +19,11 @@
 }
 
 /* padding */
+
+.xxs {
+  padding: var(--button-padding-xxs);
+}
+
 .xs {
   padding: var(--button-padding-xs);
 }

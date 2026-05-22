@@ -1,0 +1,68 @@
+.cardLine {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  height: 90px;
+  gap: 32px;
+  padding: 15px 40px 15px 20px;
+  border: 1px solid var(--grayscale-gray-7);
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grayscale-black);
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--main-normal);
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 133%;
+  color: var(--grayscale-gray-2);
+}
+
+.price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--grayscale-black);
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

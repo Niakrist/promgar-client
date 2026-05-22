@@ -3,7 +3,7 @@ import styles from "./Button.module.css";
 import cn from "classnames";
 import Link from "next/link";
 
-export type ButtonPadding = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
+export type ButtonPadding = "xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 export type ButtonVariant =
   | "primary"
   | "blue"
@@ -47,6 +47,7 @@ export const Button = ({
   const classNames = cn(
     styles.button,
     {
+      [styles.xxs]: padding === "xxs",
       [styles.xs]: padding === "xs",
       [styles.sm]: padding === "sm",
       [styles.md]: padding === "md",
