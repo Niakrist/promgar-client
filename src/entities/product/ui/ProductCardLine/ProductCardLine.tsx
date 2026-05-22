@@ -18,7 +18,7 @@ export const ProductCardLine = ({ product }: IProductCardLineProps) => {
           alt={`Подшипник ${product.name}`}
         />
         <hgroup className={styles.group}>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href={`./${product.id}`}>
             Подшипник {product.name}
           </Link>
           <p className={styles.text}>
