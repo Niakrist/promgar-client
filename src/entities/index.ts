@@ -1,3 +1,4 @@
-export { CartButton } from "./cart/ui/CartButton/CartButton";
-export { categoryList } from "./category/api/getCategories";
-export { brandsList } from "./brand/api/getBrands";
+export { CartButton, Counter } from "./cart";
+export { categoryList } from "./category";
+export { brandsList } from "./brand";
+export { ProductCardLine, productList } from "./product";

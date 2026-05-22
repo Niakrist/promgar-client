@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 20px;
+  align-items: self-start;
 }
 
 .section {
