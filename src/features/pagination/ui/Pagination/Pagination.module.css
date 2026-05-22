@@ -1,0 +1,43 @@
+.nav {
+  margin-top: 30px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--grayscale-gray-1);
+
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: var(--grayscale-gray-7);
+}
+
+.active {
+  background-color: var(--main-normal);
+  color: var(--white);
+}
+
+.active:hover {
+  background-color: var(--main-normal);
+}

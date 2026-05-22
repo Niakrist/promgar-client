@@ -10,13 +10,17 @@ export const Pagination = () => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
+    console.log("currentIndex: ", currentIndex);
+    console.log("index: ", index);
     setCurrentIndex(index);
   };
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={styles.list}>
-        <li className={styles.item}></li>
+        <li className={styles.item}>
+          <Icon name="iconPaginationLeft" />
+        </li>
         {PAGES.map((page) => (
           <li
             onClick={() => handleClick(page)}
@@ -28,7 +32,9 @@ export const Pagination = () => {
             {page}
           </li>
         ))}
-        <li className={styles.item}></li>
+        <li className={styles.item}>
+          <Icon name="iconPaginationRight" />
+        </li>
       </ul>
     </nav>
   );
