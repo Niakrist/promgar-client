@@ -2,7 +2,6 @@ import { Container, Htag } from "@/shared/ui";
 import styles from "./page.module.css";
 import { Sidebar } from "@/widgets";
 import { ProductList } from "@/widgets/productList/ui/ProductList/ProductList";
-import { Pagination } from "@/features";
 export default function ProductsPage() {
   return (
     <section className={styles.section}>
@@ -12,10 +11,7 @@ export default function ProductsPage() {
         </Htag>
         <div className={styles.wrapper}>
           <Sidebar />
-          <div>
-            <ProductList />
-            <Pagination />
-          </div>
+          <ProductList />
         </div>
       </Container>
     </section>
