@@ -23,6 +23,8 @@ import { IconChevron } from "./Icons/IconChevron";
 import { IconReset } from "./Icons/IconReset";
 import { IconMinus } from "./Icons/IconMinus";
 import { IconPlus } from "./Icons/IconPlus";
+import { IconPaginationLeft } from "./Icons/IconPaginationLeft";
+import { IconPaginationRight } from "./Icons/IconPaginationRight";
 
 export type TIcons =
   | "iconEmail"
@@ -48,7 +50,9 @@ export type TIcons =
   | "iconChevron"
   | "iconReset"
   | "iconMinus"
-  | "iconPlus";
+  | "iconPlus"
+  | "iconPaginationLeft"
+  | "iconPaginationRight";
 
 interface IIconsProps extends React.ComponentProps<"svg"> {
   name: TIcons;
@@ -81,6 +85,10 @@ export const Icon = ({ name, className, ...props }: IIconsProps) => {
     iconReset: <IconReset className={className} {...props} />,
     iconMinus: <IconMinus className={className} {...props} />,
     iconPlus: <IconPlus className={className} {...props} />,
+    iconPaginationLeft: <IconPaginationLeft className={className} {...props} />,
+    iconPaginationRight: (
+      <IconPaginationRight className={className} {...props} />
+    ),
   };
   return icons[name];
 };
