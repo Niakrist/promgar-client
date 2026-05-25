@@ -27,8 +27,8 @@ export const ConsentForm = () => {
       </Button>
       <Checkbox
         className={styles.checkbox}
-        isActive={isActive}
-        handleChange={handleChange}
+        checked={isActive}
+        onChange={handleChange}
         id="agree"
         text="Я согласен на обработку персональных данных"
       />
