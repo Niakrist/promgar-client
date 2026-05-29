@@ -1,0 +1,12 @@
+.card {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: var(--grayscale-gray-10);
+}
+
+.white {
+  background-color: var(--white);
+}
+.grey {
+  background-color: var(--grayscale-gray-10);
+}

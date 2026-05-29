@@ -32,7 +32,7 @@ export const ProductCardLine = ({ product }: IProductCardLineProps) => {
           : product.price + " руб"}{" "}
       </p>
 
-      <Counter />
+      <Counter size="s" />
       <div className={styles.buttonGroup}>
         <Button
           textColor="blue"

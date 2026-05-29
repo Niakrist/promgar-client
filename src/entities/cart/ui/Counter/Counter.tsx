@@ -3,12 +3,22 @@ import { useState } from "react";
 
 import styles from "./Counter.module.css";
 import { Icon } from "@/shared/ui";
+import cn from "classnames";
 
-export const Counter = () => {
+interface ICounterProps {
+  size: "s" | "m";
+}
+
+export const Counter = ({ size }: ICounterProps) => {
   const [count, setCount] = useState("1");
   return (
     <div className={styles.wrapper}>
-      <button className={styles.button}>
+      <button
+        className={cn(styles.button, {
+          [styles.small]: size === "s",
+          [styles.medium]: size === "m",
+        })}
+      >
         <Icon name="iconMinus" />
       </button>
       <input
@@ -17,7 +27,12 @@ export const Counter = () => {
         value={count}
         onChange={(e) => setCount(e.target.value)}
       />
-      <button className={styles.button}>
+      <button
+        className={cn(styles.button, {
+          [styles.small]: size === "s",
+          [styles.medium]: size === "m",
+        })}
+      >
         <Icon name="iconPlus" />
       </button>
     </div>
