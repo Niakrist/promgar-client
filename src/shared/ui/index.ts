@@ -8,3 +8,4 @@ export { Checkbox } from "./Checkbox/Checkbox";
 export { CheckBoxFilter } from "./CheckBoxFilter/CheckBoxFilter";
 export { Breadcrumbs } from "./Breadcrumbs/Breadcrumbs";
 export { Dropdown } from "./Dropdown/Dropdown";
+export { WrapperCard } from "./WrapperCard/WrapperCard";

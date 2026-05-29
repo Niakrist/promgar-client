@@ -1,12 +1,16 @@
 import { ProductCardLine } from "@/entities";
 
 import styles from "./ProductList.module.css";
-import { productList } from "@/entities";
+import { IProduct } from "@/entities/product/model/types";
 
-export const ProductList = () => {
+interface IProductListProps {
+  products: IProduct[];
+}
+
+export const ProductList = ({ products }: IProductListProps) => {
   return (
     <ul>
-      {productList.map((product) => (
+      {products.map((product) => (
         <li key={product.id} className={styles.item}>
           <ProductCardLine product={product} />
         </li>

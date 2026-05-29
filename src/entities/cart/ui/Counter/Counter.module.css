@@ -6,11 +6,11 @@
   max-width: 145px;
   border: 1px solid var(--grayscale-gray-6);
   border-radius: 5px;
+  background-color: var(--white);
 }
 
 .button {
   margin: 0;
-  padding: 8px;
   background-color: transparent;
   border: none;
   border-radius: 5px;
@@ -35,4 +35,12 @@
   line-height: 143%;
   text-align: center;
   color: var(--grayscale-black);
+}
+
+.small {
+  padding: 8px;
+}
+
+.medium {
+  padding: 11px;
 }

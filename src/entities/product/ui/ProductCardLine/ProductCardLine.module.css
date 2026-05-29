@@ -5,6 +5,7 @@
   height: 90px;
   gap: 32px;
   padding: 15px 40px 15px 20px;
+  background-color: var(--white);
   border: 1px solid var(--grayscale-gray-7);
   border-radius: 5px;
 }

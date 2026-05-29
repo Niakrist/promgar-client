@@ -1,0 +1,28 @@
+.item {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px;
+  border-radius: 5px;
+}
+
+.left {
+  padding: 8px 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grayscale-gray-1);
+}
+
+.right {
+  padding: 8px 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grayscale-black);
+}
+
+.grayscale.grayscale {
+  background-color: var(--grayscale-gray-10);
+}

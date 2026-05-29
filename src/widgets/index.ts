@@ -6,5 +6,13 @@ export { Subscribe } from "./subscribe";
 export { Footer } from "./footer";
 export { BrandsList } from "./brands";
 export { Sidebar } from "./sidebar";
-export { ProductList } from "./productList";
-export { ProductGallery } from "./productGallery";
+
+export {
+  ProductGallery,
+  ProductInfo,
+  ProductList,
+  ProductPageNav,
+  ProductWrapper,
+  ProductSpecifications,
+  ProductSpecificationsList,
+} from "./product";
