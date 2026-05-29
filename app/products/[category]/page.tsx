@@ -1,8 +1,10 @@
 import { Container, Htag } from "@/shared/ui";
 import styles from "./page.module.css";
 import { Sidebar } from "@/widgets";
-import { ProductList } from "@/widgets/productList/ui/ProductList/ProductList";
+import { ProductList } from "@/widgets/product/productList/ui/ProductList/ProductList";
 import { Pagination } from "@/features";
+
+import { productList } from "@/entities";
 
 export default async function CategoryPage({
   params,
@@ -19,7 +21,7 @@ export default async function CategoryPage({
         <div className={styles.wrapper}>
           <Sidebar />
           <div>
-            <ProductList />
+            <ProductList products={productList} />
             <Pagination />
           </div>
         </div>
