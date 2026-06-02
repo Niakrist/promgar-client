@@ -6,9 +6,13 @@ import { Counter } from "@/entities";
 
 interface IProductCardLineProps {
   product: IProduct;
+  isCart?: boolean;
 }
 
-export const ProductCardLine = ({ product }: IProductCardLineProps) => {
+export const ProductCardLine = ({
+  product,
+  isCart = false,
+}: IProductCardLineProps) => {
   return (
     <article className={styles.cardLine}>
       <div className={styles.info}>
@@ -27,26 +31,33 @@ export const ProductCardLine = ({ product }: IProductCardLineProps) => {
         </hgroup>
       </div>
       <p className={styles.price}>
-        {product.price === "по запросу"
-          ? "по запросу"
-          : product.price + " руб"}{" "}
+        {product.price === "по запросу" ? "по запросу" : product.price + " ₽"}
       </p>
 
       <Counter size="s" />
-      <div className={styles.buttonGroup}>
-        <Button
-          textColor="blue"
-          variant="blue"
-          padding="xs"
-          fw="medium"
-          fs="small"
-        >
-          Купить в 1 клик
-        </Button>
-        <Button variant="primary" padding="xxs" textColor="white">
-          <Icon name="iconCart" className={styles.icon} />
-        </Button>
-      </div>
+      {isCart ? (
+        <div className={styles.cart}>
+          <p className={styles.sum}>10 500 000 ₽</p>
+          <button className={styles.button}>
+            <Icon name="iconTrash" />
+          </button>
+        </div>
+      ) : (
+        <div className={styles.buttonGroup}>
+          <Button
+            textColor="blue"
+            variant="blue"
+            padding="xs"
+            fw="medium"
+            fs="small"
+          >
+            Купить в 1 клик
+          </Button>
+          <Button variant="primary" padding="xxs" textColor="white">
+            <Icon name="iconCart" className={styles.icon} />
+          </Button>
+        </div>
+      )}
     </article>
   );
 };

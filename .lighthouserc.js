@@ -7,8 +7,8 @@ module.exports = {
       // Порт по умолчанию, если не задан иначе
       url: [
         "http://localhost:3000/", // главная
-        "http://localhost:3000/products/ball-bearings", // добавь свои маршруты
-        "http://localhost:3000/products/ball-bearings/6205", // добавь свои маршруты
+//        "http://localhost:3000/products/ball-bearings", // добавь свои маршруты
+//        "http://localhost:3000/products/ball-bearings/6205", // добавь свои маршруты
       ],
       numberOfRuns: 1, // несколько прогонов для стабильности
     },
