@@ -1,7 +1,6 @@
-import { IProduct } from "@/entities/product/model/types";
-import cn from "classnames";
+import { IProduct } from "../../model/types";
 import styles from "./ProductSpecificationsList.module.css";
-
+import cn from "classnames";
 type SpecificationsProps = Pick<IProduct, "specifications">;
 
 export const ProductSpecificationsList = ({
