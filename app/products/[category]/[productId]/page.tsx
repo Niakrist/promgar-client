@@ -3,14 +3,15 @@ import styles from "./page.module.css";
 import {
   ProductGallery,
   ProductInfo,
-  ProductList,
   ProductPageNav,
   ProductWrapper,
-  ProductSpecificationsList,
+  ProductSpecificationsWrapper,
+  ProductDescription,
 } from "@/widgets";
 
 import { productList } from "@/entities";
 import { AddProductToCart } from "@/features";
+import { ProductAnalogWrapper } from "@/widgets/product/productAnalogWrapper/ui/ProductAnalogWrapper/ProductAnalogWrapper";
 
 export default async function ProductPage({
   params,
@@ -35,29 +36,28 @@ export default async function ProductPage({
           <ProductPageNav />
         </Container>
       </section>
+
       <section className={styles.section}>
         <Container>
-          <ProductWrapper
-            color="grey"
-            title="Аналоги подшипника"
-            name={productList[1].name}
-          >
-            <ProductList products={products} />
-          </ProductWrapper>
+          <ProductDescription />
         </Container>
       </section>
 
       <section className={styles.section}>
         <Container>
-          <ProductWrapper
-            color="white"
-            title="Характеристики подшипника"
+          <ProductSpecificationsWrapper
             name={productList[1].name}
-          >
-            <ProductSpecificationsList
-              specifications={products[0].specifications}
-            />
-          </ProductWrapper>
+            specifications={products[0].specifications}
+          />
+        </Container>
+      </section>
+
+      <section className={styles.section}>
+        <Container>
+          <ProductAnalogWrapper
+            title={productList[1].name}
+            products={products}
+          />
         </Container>
       </section>
     </>

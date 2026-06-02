@@ -1,7 +1,7 @@
 import { Container, Htag } from "@/shared/ui";
 import styles from "./page.module.css";
 import { Sidebar } from "@/widgets";
-import { ProductList } from "@/widgets/product/productList/ui/ProductList/ProductList";
+import { ProductList } from "@/entities/product/ui/ProductList/ProductList";
 import { Pagination } from "@/features";
 
 import { productList } from "@/entities";
