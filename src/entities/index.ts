@@ -6,4 +6,8 @@ export {
   productList,
   ProductTitle,
   ProductSpecifications,
+  ProductSpecificationsList,
+  ProductList,
 } from "./product";
+
+export type { IProduct, ISpecification } from "./product";

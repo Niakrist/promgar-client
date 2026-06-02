@@ -10,9 +10,8 @@ export { Sidebar } from "./sidebar";
 export {
   ProductGallery,
   ProductInfo,
-  ProductList,
   ProductPageNav,
   ProductWrapper,
-  ProductSpecifications,
-  ProductSpecificationsList,
+  ProductSpecificationsWrapper,
+  ProductDescription,
 } from "./product";

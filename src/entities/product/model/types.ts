@@ -13,7 +13,7 @@ export interface IProduct {
   article: string;
 }
 
-interface ISpecification {
+export interface ISpecification {
   name: string;
   value: string;
 }

@@ -1,7 +1,9 @@
 .card {
-  padding: 40px;
   border-radius: 10px;
-  background-color: var(--grayscale-gray-10);
+}
+
+.p40 {
+  padding: 40px;
 }
 
 .white {

@@ -10,6 +10,16 @@ export const ProductPageNav = () => {
             padding="lg"
             textColor="black"
             variant="white"
+            href="#description"
+          >
+            Описание
+          </Button>
+        </li>
+        <li>
+          <Button
+            padding="lg"
+            textColor="black"
+            variant="white"
             href="#specifications"
           >
             Характеристики
@@ -23,16 +33,6 @@ export const ProductPageNav = () => {
             href="#analogues"
           >
             Аналоги
-          </Button>
-        </li>
-        <li>
-          <Button
-            padding="lg"
-            textColor="black"
-            variant="white"
-            href="#description"
-          >
-            Описание
           </Button>
         </li>
         <li>
