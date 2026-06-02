@@ -15,3 +15,5 @@ export {
   ProductSpecificationsWrapper,
   ProductDescription,
 } from "./product";
+
+export { CartOrder } from "./cart";

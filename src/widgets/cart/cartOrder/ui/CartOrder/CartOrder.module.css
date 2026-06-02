@@ -1,0 +1,92 @@
+.cartOrder {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid var(--grayscale-gray-8);
+  border-radius: 10px;
+  background-color: var(--grayscale-gray-10);
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 8px;
+}
+
+.item + .item {
+  margin-top: 10px;
+}
+
+.itemPrice {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.cartInfo {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 143%;
+  color: var(--grayscale-gray-1);
+}
+
+.separator {
+  flex: 1; /* занимает всё свободное место */
+  height: 12px; /* высота равна высоте строки */
+  background: radial-gradient(circle, currentColor 1px, transparent 1px);
+  background-size: 4px 2px; /* расстояние между точками */
+  background-repeat: repeat-x;
+  background-position: center;
+  color: var(--grayscale-gray-6); /* цвет точек */
+}
+
+.cartPrice {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+  color: var(--grayscale-black);
+}
+
+.form {
+  margin: 15px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox {
+  margin-top: 15px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.wrapperCard {
+  display: flex;
+  gap: 15px;
+}
+
+.wrapperCard + .wrapperCard {
+  margin-top: 10px;
+}
+
+.titleSmall {
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--grayscale-gray-1);
+}
