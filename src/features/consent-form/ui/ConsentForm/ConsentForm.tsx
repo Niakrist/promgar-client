@@ -15,6 +15,7 @@ export const ConsentForm = () => {
         type="text"
         placeholder="Ваш e-mail"
         padding="m"
+        bgColor="white"
         className={styles.input}
       />
       <Button

@@ -55,6 +55,7 @@
   font-size: 16px;
   line-height: 1.38;
   color: var(--grayscale-black);
+  white-space: nowrap;
 }
 
 .buttonGroup {
@@ -66,4 +67,33 @@
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sum {
+  width: 120px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+  color: var(--grayscale-black);
+}
+
+.button {
+  padding: 10px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--grayscale-gray-3);
+  transition: color 0.3s;
+}
+
+.button:hover {
+  color: var(--red);
 }

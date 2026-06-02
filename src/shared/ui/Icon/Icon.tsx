@@ -26,6 +26,9 @@ import { IconPlus } from "./Icons/IconPlus";
 import { IconPaginationLeft } from "./Icons/IconPaginationLeft";
 import { IconPaginationRight } from "./Icons/IconPaginationRight";
 import { IconInStock } from "./Icons/IconInStock";
+import { IconTrash } from "./Icons/IconTrash";
+import { IconBox } from "./Icons/IconBox";
+import { IconSupport } from "./Icons/IconSupport";
 
 export type TIcons =
   | "iconEmail"
@@ -54,7 +57,10 @@ export type TIcons =
   | "iconPlus"
   | "iconPaginationLeft"
   | "iconPaginationRight"
-  | "iconInStock";
+  | "iconInStock"
+  | "iconTrash"
+  | "iconBox"
+  | "iconSupport";
 
 interface IIconsProps extends React.ComponentProps<"svg"> {
   name: TIcons;
@@ -92,6 +98,9 @@ export const Icon = ({ name, className, ...props }: IIconsProps) => {
       <IconPaginationRight className={className} {...props} />
     ),
     iconInStock: <IconInStock className={className} {...props} />,
+    iconTrash: <IconTrash className={className} {...props} />,
+    iconBox: <IconBox className={className} {...props} />,
+    iconSupport: <IconSupport className={className} {...props} />,
   };
   return icons[name];
 };
