@@ -11,7 +11,12 @@
 !.yarn/versions
 
 #lighthouse
+lighthouseci/*
+.lighthouseci/*
+/.lighthouseci/*
+lighthouseci
 .lighthouseci
+/.lighthouseci
 
 # testing
 /coverage
