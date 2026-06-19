@@ -1,7 +1,7 @@
 import { ProductCardLine } from "@/entities";
 
 import styles from "./ProductList.module.css";
-import { IProduct } from "@/entities/product/model/types";
+import { IProduct } from "@/entities/types/types";
 
 interface IProductListProps {
   products: IProduct[];
