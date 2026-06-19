@@ -2,14 +2,15 @@ import cn from "classnames";
 import styles from "./ProductSpecificationsWrapper.module.css";
 import { Htag, WrapperCard } from "@/shared/ui";
 import { ISpecification, ProductSpecificationsList } from "@/entities";
+import { IProduct } from "@/entities/types/types";
 
 interface SpecificationsProps {
-  specifications: ISpecification[];
+  attributes: Pick<IProduct, "attributes"> | null;
   name: string;
 }
 
 export const ProductSpecificationsWrapper = ({
-  specifications,
+  attributes,
   name,
 }: SpecificationsProps) => {
   return (
@@ -17,7 +18,7 @@ export const ProductSpecificationsWrapper = ({
       <Htag color="black" size="medium" tag="h2" className={styles.title}>
         Характеристики подшипника {name}
       </Htag>
-      <ProductSpecificationsList specifications={specifications} />
+      {attributes && <ProductSpecificationsList attributes={attributes} />}
     </WrapperCard>
   );
 };

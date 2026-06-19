@@ -14,15 +14,15 @@ export const topHeaderLinks: NavLink[] = [
 ];
 
 export const bearingHeaderLinks: NavLink[] = [
-  { href: "/products/1", label: "Акции", name: "iconDiscont" },
-  { href: "/products/2", label: "Шариковые" },
-  { href: "/products/3", label: "Роликовые" },
-  { href: "/products/4", label: "Игольчатые" },
-  { href: "/products/5", label: "Сферические" },
-  { href: "/products/6", label: "Конические" },
-  { href: "/products/7", label: "Однорядные" },
-  { href: "/products/8", label: "Двухрядные" },
-  { href: "/products/9", label: "Шаринирные" },
-  { href: "/products/10", label: "Линейного перемещения" },
-  { href: "/products/11", label: "Автомобильные" },
+  { href: "/catalog/1", label: "Акции", name: "iconDiscont" },
+  { href: "/catalog/sharikovye", label: "Шариковые" },
+  { href: "/catalog/rolikovye", label: "Роликовые" },
+  { href: "/catalog/igolchatye", label: "Игольчатые" },
+  { href: "/catalog/sfericheskie", label: "Сферические" },
+  { href: "/catalog/konicheskie", label: "Конические" },
+  { href: "/catalog/2", label: "Однорядные" },
+  { href: "/catalog/3", label: "Двухрядные" },
+  { href: "/catalog/sharnirnye", label: "Шаринирные" },
+  { href: "/catalog/10", label: "Линейного перемещения" },
+  { href: "/catalog/11", label: "Автомобильные" },
 ];

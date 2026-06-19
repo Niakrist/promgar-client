@@ -1,22 +1,23 @@
+import { IProduct } from "@/entities/types/types";
 import styles from "./ProductTitle.module.css";
-import { IProduct } from "@/entities/product/model/types";
+
 import { Htag } from "@/shared/ui";
 import Link from "next/link";
 
-type ProductTitleProps = Pick<IProduct, "name" | "brand" | "article">;
+type ProductTitleProps = Pick<IProduct, "title" | "brand" | "slug">;
 
-export const ProductTitle = ({ name, brand, article }: ProductTitleProps) => {
+export const ProductTitle = ({ title, brand, slug }: ProductTitleProps) => {
   return (
     <div className={styles.content}>
       <Htag tag="h1" size="normal" color="black" className={styles.title}>
-        Подшипник {name} {brand}
+        Подшипник {title} {brand?.name}
       </Htag>
       <div className={styles.article}>
         <p className={styles.text}>
-          Артикул <span>{article}</span>
+          Артикул <span>{slug}</span>
         </p>
         <Link className={styles.link} href="/">
-          {brand}
+          {brand?.name}
         </Link>
       </div>
     </div>
