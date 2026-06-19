@@ -1,8 +1,9 @@
 import { Button, Icon } from "@/shared/ui";
 import styles from "./ProductCardLine.module.css";
 import Link from "next/link";
-import { IProduct } from "../../model/types";
+
 import { Counter } from "@/entities";
+import { IProduct } from "@/entities/types/types";
 
 interface IProductCardLineProps {
   product: IProduct;
@@ -18,15 +19,16 @@ export const ProductCardLine = ({
       <div className={styles.info}>
         <img
           className={styles.img}
-          src={`/${product.img}`}
-          alt={`Подшипник ${product.name}`}
+          src={`/${product.images[0]}`}
+          alt={`Подшипник ${product.title}`}
         />
         <hgroup className={styles.group}>
-          <Link className={styles.link} href={`./${product.id}`}>
-            Подшипник {product.name}
+          <Link className={styles.link} href={`/catalog/${product.slug}`}>
+            Подшипник {product.title}
           </Link>
           <p className={styles.text}>
-            {product.brand} • {product.inD}x{product.wD}x{product.h}
+            {product.brand?.name} • {product.innerDiameterMm}x
+            {product.outerDiameterMm}x{product.widthMm}
           </p>
         </hgroup>
       </div>

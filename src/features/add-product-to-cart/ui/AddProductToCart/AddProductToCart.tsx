@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./AddProductToCart.module.css";
-import { IProduct } from "@/entities/product/model/types";
+
 import { Button, Icon } from "@/shared/ui";
 import { Counter } from "@/entities";
+import { IProduct } from "@/entities/types/types";
 
 type AddProductToCartProps = Pick<IProduct, "price">;
 

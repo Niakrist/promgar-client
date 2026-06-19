@@ -2,11 +2,11 @@ import { ICategory } from "../model/types";
 
 export const categoryList: ICategory[] = [
   {
-    id: "ball-bearings",
+    id: "sharikovye",
     name: "Шариковые",
     images: "ball-bearings.png",
     productsCount: 12500,
-    url: "/products/ball-bearings",
+    url: "/products/sharikovye  ",
   },
   {
     id: "roller-bearings",

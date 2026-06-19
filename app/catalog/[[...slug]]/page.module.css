@@ -9,6 +9,16 @@
   align-items: self-start;
 }
 
-.section {
+.catalog {
   margin-bottom: 60px;
+}
+
+.product {
+  margin-bottom: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 360px;
+  gap: 20px;
 }
