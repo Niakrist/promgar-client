@@ -1,0 +1,1 @@
+export { ProductAnalogWrapper } from './ui/ProductAnalogWrapper/ProductAnalogWrapper'

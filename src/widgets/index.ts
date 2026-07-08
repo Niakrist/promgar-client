@@ -14,6 +14,7 @@ export {
   ProductWrapper,
   ProductSpecificationsWrapper,
   ProductDescription,
+  ProductAnalogWrapper
 } from "./product";
 
 export { CartOrder } from "./cart";
